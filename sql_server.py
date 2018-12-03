@@ -17,7 +17,7 @@ curs = conn.cursor()
 # We are using the .executemany DB API V2.0 Method
 import csv
 insert_query = 'insert into twitter_analytics_2018 (USER_HASHTAGS,USER_TWEETS,USER_NAME,USER_LOCATION) values (?,?,?,?)'
-with open(r'/Users/pb/Desktop/Documents/MIS_5400/Project/Twitter-API/saved_tweets_new.csv', 'r',encoding='utf8') as cpi_file:
+with open(r'/Users/pb/Desktop/Documents/MIS_5400/Project/Twitter-API/saved_tweets_12012018.csv', 'r',encoding='utf8') as cpi_file:
     cpi = csv.reader(cpi_file)
     curs.executemany(insert_query, cpi)
 

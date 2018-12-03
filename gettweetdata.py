@@ -47,7 +47,7 @@ class MyStreamer(TwythonStreamer):
 
     # Save each tweet to csv file
     def save_to_csv(self, tweet):
-        with open(r'saved_tweets_new.csv', 'a') as file:
+        with open(r'saved_tweets_12012018.csv', 'a') as file:
             writer = csv.writer(file)
             writer.writerow(list(tweet.values()))
 
