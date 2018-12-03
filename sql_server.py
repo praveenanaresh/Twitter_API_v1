@@ -3,7 +3,7 @@
 import pyodbc
 
 
-connection_string = 'Driver={ODBC Driver 17 for SQL Server};Server=stairway.usu.edu;Database=Praveena5400;Uid=Praveena5400;Pwd=Praveena@naresh10;'
+connection_string = 'Driver={ODBC Driver 17 for SQL Server};Server=xxxx;Database=xxxx;Uid=xxxx;Pwd=xxxx;'
 
 # Use .connect (DB API 2.0) to get a Connection Object
 conn = pyodbc.connect(connection_string,autocommit=True) # autocommit = True, since it is the SQL Server way
